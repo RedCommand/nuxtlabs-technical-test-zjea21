@@ -9,7 +9,6 @@
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
       <!-- TODO: Display the current nuxt page -->
       <NuxtPage/>
-      <!--end todo-->
     </div>
   </div>
 </template>
