@@ -24,7 +24,7 @@ const { data: articles } = await useAsyncData("articles", () => {
     // https://content.nuxtjs.org/api/composables/query-content#find
     return new Promise((resolve) => {
         queryContent("articles")
-            .sort("date")
+            .sort({ date: -1 }) // why is it -1 and not 0 like on the doc ? --> https://content.nuxtjs.org/api/composables/query-content#sortoptions
             .find()
             .then((articles) => resolve(articles));
     });
