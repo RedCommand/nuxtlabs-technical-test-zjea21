@@ -36,7 +36,7 @@
             <ul
                 v-for="article in sortDirection
                     ? matchTags(articles, selectedTags, search)
-                    : articles.slice().reverse()"
+                    : matchTags(articles, selectedTags, search).slice().reverse()"
                 :key="article"
             >
                 <Article :article="article" :selectedTags="selectedTags" />
